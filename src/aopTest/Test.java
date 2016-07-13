@@ -6,13 +6,13 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class Test {
 	
-	public void test(){
-		System.out.println("test");
+	public void test(int i){
+		System.out.println(i);
 	}
 	
 	public static void main(String[] args) {
 		BeanFactory factory = new FileSystemXmlApplicationContext("application.xml");
-		factory.getBean(Test.class).test();
+		factory.getBean(Test.class).test(12);
 		AopNamespaceHandler aopNamespaceHandler;
 	}
 
