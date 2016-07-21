@@ -10,7 +10,6 @@ public class Test {
 	
 	public void test(int i){
 		System.out.println(i);
-		System.out.println(AopContext.currentProxy());
 	}
 	
 	public static void main(String[] args) {
